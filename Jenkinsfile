@@ -3,7 +3,7 @@ agent any
 stages{
 stage('Build'){
   steps{
-    echo 'Running Continuous Deployment'
+    echo 'Running build Automation'
     sh './gradlew build --no-daemon'
     archiveArtifacts artifacts: dist/trainSchedule.zip
    }
